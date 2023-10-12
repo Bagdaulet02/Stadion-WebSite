@@ -29,7 +29,7 @@ jobs:
         git clone https://github.com/Bagdaulet02/Stadion-WebSite.git
     - name: cd
       run: |
-        cd Stadion-WebSite/ && pwd
+        cd Stadion-WebSite/Stadion && pwd
     - name: Run Server
       run: |
         python manage.py runserver
