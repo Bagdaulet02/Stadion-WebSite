@@ -24,10 +24,6 @@ jobs:
     - name: Install Django
       run: |
         pip install django
-    - name: cd
-      run: |
-        cd Stadion && pwd;
-        ls;
     - name: Run Server
       run: |
-        python ./manage.py runserver
+        python Stadion/manage.py runserver
