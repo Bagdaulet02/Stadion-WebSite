@@ -3,41 +3,47 @@
 <head>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<title>Stadion Main</title>
-	<link href="https://atuin.ru/demo/OwlCarousel2/dist/assets/owl.carousel.min.css">
+	<title>{{ title }}</title>
 	<link href="index.css" rel="stylesheet" type="text/css">
-		<script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
-	<script src="https://atuin.ru/demo/OwlCarousel2/dist/assets/owl.carousel.min.js"></script>
-	<script>
-		let $owl = $('.carousel-2');
-    $owl.children().each( function( index ) {
-    $(this).attr( 'data-position', index );
-});
-$(document).on('click', '.owl-item>div', function() {
-    let $speed = 300;
-    $owl.trigger('to.owl.carousel', [$(this).data( 'position' ), $speed] );
-});    
-$owl.owlCarousel({
-    loop:true,
-    center: true,
-    stagePadding: 70,
-    nav: true,
-    dots: false,
-    navText: ['&lsaquo;', '&rsaquo;'],
-    responsive:{
-        0:{items:1},
-        600:{items:2},
-        992:{items:3},
-        1200:{items:4},
-        1600:{items:5}            
+	<link rel="stylesheet" type="text/css" href="../../../Html/slick-master/slick/slick.css">
+  	<link href="../../../Html/slick-master/slick/slick-theme.css">
+  	<style>
+ .slider {
+        width: 100%;
+        margin: 100px auto;
     }
-});
-	</script>
+
+.slick-slide {
+      margin: 0px 20px;
+    }
+
+.slick-slide img {
+      width: 100%;
+    }
+
+.slick-prev::before,
+.slick-next::before {
+      color: black;
+    }
+
+
+.slick-slide {
+      transition: all ease-in-out .3s;
+      opacity: .2;
+    }
+    
+.slick-active {
+      opacity: .5;
+    }
+
+.slick-current {
+      opacity: 1;
+    }
+  	</style>
 </head>
 <body>
 <header> 
 <div class="navbar">
-	Header
 	<div class="navbar-menu">
 	<a href="#">Главный</a>
 	<a href="#">Регистрация</a> 
@@ -58,27 +64,70 @@ $owl.owlCarousel({
 </section> 
 <section> 
 	<div class="main-page"> 
-		<div class="carousel-2 owl-carousel">
-				<div class="owl-pic">
-					<img src="img/f2.jpg" />
+		<div class="center slider">
+				<div>
+					<img src="../../../Html/img/at02-2552-main.jpg" />
 				</div>
-				<div class="owl-pic">
-					<img src="img/f2.jpg" />
+				<div>
+					<img src="../../../Html/img/gv0obsxlrjy5jflao0zh.webp" />
 				</div>
-				<div class="owl-pic">
-					<img src="img/f2.jpg" />
+				<div>
+					<img src="../../../Html/img/1907cd03afba4bcbb5d11ae1cbfc78ae.jpeg" />
 				</div>
-				<div class="owl-pic">
-					<img src="img/f2.jpg" />
+				<div>
+					<img src="../../../Html/img/1907cd03afba4bcbb5d11ae1cbfc78ae.jpeg" />
 				</div>
 		</div>
-			<div class="buttons">
-			<button id="aldy">&gt;</button>
-			<button id="arty">&lt;</button>
-			</div>
 	</div> 
 </section>
-<footer> </footer>
-
+  	<script src="https://code.jquery.com/jquery-2.2.0.min.js" type="text/javascript"></script>
+	<script type="text/javascript" src="../../../Html/slick-master/slick/slick.js"></script>
+	<script type="text/javascript">
+$(document).ready(function() {
+$('.center').slick({
+  centerMode: true,
+  centerPadding: '60px',
+  slidesToShow: 3,
+  responsive: [
+    {
+      breakpoint: 768,
+      settings: {
+        arrows: false,
+        centerMode: true,
+        centerPadding: '40px',
+        slidesToShow: 3
+      }
+    },
+    {
+      breakpoint: 480,
+      settings: {
+        arrows: false,
+        centerMode: true,
+        centerPadding: '40px',
+        slidesToShow: 1
+      }
+    }
+  ]
+});
+});
+	</script>
+<footer> 
+<div class="footer-main"> 
+	<div class="footer-san-sol">
+		<ul>
+		<li>Командалар</li>
+		<li>Сайт жайлы</li>
+		<li>Главный</li>
+		<li>Суреттер</li>
+		<li>Матчтар</li>
+	</ul>
+	</div>
+	<div class="footer-san-on">
+		<a href="#">Instagram:</a>
+		<a href="#">Whatsapp:</a>
+		<a href="#">Telegram:</a>
+	</div>
+</div>
+</footer>	
 </body>
 </html>
