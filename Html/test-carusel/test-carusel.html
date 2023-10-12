@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<head>
+   <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+  <!-- <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick-theme.css"> -->
+  <style>
+    .center{
+      max-height: 70%;
+      height: 50%;
+      width: 70%;
+      margin: 5em ;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="center">
+    <div><img src="image2.jpg" alt="Image 1"></div>
+    <div><img src="image2.jpg" alt="Image 2"></div>
+    <div><img src="image2.jpg" alt="Image 3"></div>
+    <div><img src="image2.jpg" alt="Image 4"></div>
+    <!-- Добавьте другие слайды по мере необходимости -->
+  </div>
+
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+   <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+  <script>
+    $(document).ready(function(){
+      $('.center').slick({
+        centerMode: true,
+        centerPadding: '60px',
+        slidesToShow: 3,
+        responsive: [
+          {
+            breakpoint: 768,
+            settings: {
+              arrows: false,
+              centerMode: true,
+              centerPadding: '40px',
+              slidesToShow: 3
+            }
+          },
+          {
+            breakpoint: 480,
+            settings: {
+              arrows: false,
+              centerMode: true,
+              centerPadding: '40px',
+              slidesToShow: 1
+            }
+          }
+        ]
+      });
+    });
+  </script>
+</body>
+</html>

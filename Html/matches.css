@@ -1,0 +1,59 @@
+body {
+	margin: 0;
+	padding: 0;
+	font: small sans-serif ;
+}
+
+header {
+	border: thick solid red;
+	width: 100%;
+}
+
+header .header-about {
+	height: 10vh;
+}
+.container-section {
+	border: thick blue solid;
+	width: 100%;
+}
+.section-about {
+	padding: 10px 0px;
+	height: 85vh;
+	margin: auto;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.match-detalis {
+	width: 80%;
+	height: 7em;
+	border: thick aquamarine solid;
+	display: flex;
+}
+
+
+.footer-about {
+	border: thick black solid;
+	width: 100%;
+	height: 40vh;
+	padding: 30px 0 50px;
+	display: flex;
+}
+
+.footer-san-sol {
+	column-count: 3;
+	width: 70%;
+}
+
+.footer-san-on {
+	width: 30%;	
+	display: flex;
+	flex-direction: column;
+	font-size: 1.3em;
+}
+
+.footer-san-on a {
+	padding-bottom:  15px;
+}
