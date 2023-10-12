@@ -26,10 +26,13 @@ jobs:
         pip install django
     - name: Git Clone
       run: |
-        git clone https://github.com/Bagdaulet02/Stadion-WebSite.git
+        git clone https://github.com/Bagdaulet02/Stadion-WebSite.git;
+        pwd;
+        ls;
     - name: cd
       run: |
-        cd Stadion-WebSite/Stadion && pwd
+        cd Stadion-WebSite/Stadion && pwd;
+        ls;
     - name: Run Server
       run: |
         python manage.py runserver
