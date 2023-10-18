@@ -44,6 +44,10 @@ section .main-match-times {
 	display: flex;
 	align-items: center;
 	width: 100%;
+	background-image:  linear-gradient(rgba(0, 0, 0, 0.5),rgba(0, 0, 0, 0.5) ) , url('../../../Html/img/miunhen_germaniia_allianz_arena_81232_1280x720.jpg');
+	background-repeat: no-repeat;
+	background-size: 100% auto;
+	color: white;
 }
 
 section .main-match-times .mathes-spicok {
@@ -58,21 +62,38 @@ section .main-match-times .mathes-spicok li {
 
 section .main-match-times .mathes-spicok a {
 	text-decoration: none;
-	color: black;
+	color: white;
 }
 
 section .main-match-times .mathes-spicok a:hover {
 	color: red;
 	text-decoration: underline;
 	border-radius: 5px;
-	border: thick black solid;
+	border: thick white solid;
 	padding: 10px;
 }
+
 
 section .main-page {
 	border: thick orange solid;
 	height: 70%;
 	width: 100%;
+	background-repeat: no-repeat;
+	background-position: center;
+	background: linear-gradient(rgba(0, 0, 0, 0.8),rgba(0, 0, 0, 0.8) ) , url('../../../Html/img/stadion_sidenia_krasnyj_25765_1280x720.jpg');
+}
+
+.main-text {
+	color: red;
+		text-shadow: 1px 1px white, 2px 2px white,
+		 3px 3px white, 4px 4px white,
+		 5px 5px white, 6px 6px white,
+		 7px 7px white, 8px 8px white;
+	justify-content: center;
+	font-size: 5em;
+	text-align: center;
+	padding: 10px;
+	font-family: Franklin-Cothic;
 }
 
 .center img::before {
@@ -81,26 +102,75 @@ section .main-page {
 }
 
 
+
+
+
+
+
+
+
 .footer-main {
 	border: thick black solid;
 	width: 100%;
 	height: 40vh;
 	padding: 30px 0 50px;
 	display: flex;
+	background: linear-gradient(rgba(0, 0, 0, 0.8),rgba(0, 0, 0, 0.8) ) , url('../../../Html/img/miunhen_germaniia_allianz_arena_81232_1280x720.jpg');
+	background-repeat: no-repeat;
+	background-position: center;
+	color: white;
 }
 
 .footer-san-sol {
 	column-count: 3;
 	width: 70%;
+	font-size: 1.2em;
+	color: white;
+	text-decoration: none;
+}
+
+.footer-san-sol li {
+	padding: 1.2em;
+}
+
+ul.no-markers {
+	list-style-type: none;
+}
+
+.footer-san-sol a {
+	text-decoration: none;
+	color: white;
+}
+
+.footer-san-sol a:hover {
+	color: red;
+	text-decoration: underline;
+	border-radius: 3em;
+	border: thick white solid;
+	padding: 1.5em;
 }
 
 .footer-san-on {
 	width: 30%;	
 	display: flex;
 	flex-direction: column;
-	font-size: 1.3em;
+	color: white;
 }
 
+
 .footer-san-on a {
-	padding-bottom:  15px;
+	color: white;
+	text-decoration: none;
+	font-size: 1.8em;
+	padding: 1.2em;
+	display: flex;
+	justify-content: center;
+}
+
+.footer-san-on a:hover {
+	color: red;
+	text-decoration: underline;
+	border-radius: 4em;
+	border: thick white solid;
+	padding: 1.1em;
 }
