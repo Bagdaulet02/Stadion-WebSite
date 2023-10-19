@@ -2,10 +2,11 @@ body {
 	margin: 0;
 	padding: 0;
 	font: small sans-serif ;
+	background-image:  linear-gradient(rgba(3, 25, 39, 0.8),rgba(3, 25, 39, 0.8) ) , url('../../../Html/img/stadion_sidenia_krasnyj_25765_1280x720.jpg');
 }
 
 header {
-	border: thick solid red;
+	/* border: thick solid red; */
 	width: 100%;
 }
 
@@ -25,28 +26,28 @@ header .navbar .navbar-menu a {
 	font-size: 1.3em ;
     padding:0 10px;
     text-decoration: none;
-    color: black;
+    color: white;
 }
 
 header .navbar .navbar-menu a:hover {
 	text-decoration: underline;
 	border-radius: 5px;
-	border: thick black solid;
+	border: thick white solid;
 	color :  red;
 	padding: 10px;
 } 
 
 section .main-match-times {
-	border: thick solid blue;
+	/* border: thick solid blue; */
 	padding: 10px 0px;
 	height: 15vh;
 	margin: auto;
 	display: flex;
 	align-items: center;
 	width: 100%;
-	background-image:  linear-gradient(rgba(0, 0, 0, 0.5),rgba(0, 0, 0, 0.5) ) , url('../../../Html/img/miunhen_germaniia_allianz_arena_81232_1280x720.jpg');
-	background-repeat: no-repeat;
-	background-size: 100% auto;
+	/*background-image:  linear-gradient(rgba(0, 0, 0, 0.8),rgba(0, 0, 0, 0.5) ) , url('../../../Html/img/stadion_sidenia_krasnyj_25765_1280x720.jpg');
+	*/background-repeat: no-repeat;
+	/*background-size: 100% auto;*/
 	color: white;
 }
 
@@ -75,12 +76,13 @@ section .main-match-times .mathes-spicok a:hover {
 
 
 section .main-page {
-	border: thick orange solid;
+	/* border: thick orange solid; */
 	height: 70%;
 	width: 100%;
-	background-repeat: no-repeat;
+	/*background-repeat: no-repeat;
 	background-position: center;
-	background: linear-gradient(rgba(0, 0, 0, 0.8),rgba(0, 0, 0, 0.8) ) , url('../../../Html/img/stadion_sidenia_krasnyj_25765_1280x720.jpg');
+	/*background: linear-gradient(rgba(0, 0, 0, 0.8),rgba(0, 0, 0, 0.8) ) , url('../../../Html/img/stadion_sidenia_krasnyj_25765_1280x720.jpg');
+	*/
 }
 
 .main-text {
@@ -102,22 +104,16 @@ section .main-page {
 }
 
 
-
-
-
-
-
-
-
 .footer-main {
-	border: thick black solid;
+	/* border: thick black solid; */
 	width: 100%;
 	height: 40vh;
 	padding: 30px 0 50px;
 	display: flex;
-	background: linear-gradient(rgba(0, 0, 0, 0.8),rgba(0, 0, 0, 0.8) ) , url('../../../Html/img/miunhen_germaniia_allianz_arena_81232_1280x720.jpg');
+	background: linear-gradient(rgba(3, 25, 39, 1),rgba(3, 25, 39, 1) );
+	/*
 	background-repeat: no-repeat;
-	background-position: center;
+	background-position: center; */
 	color: white;
 }
 
@@ -140,6 +136,7 @@ ul.no-markers {
 .footer-san-sol a {
 	text-decoration: none;
 	color: white;
+	padding: 1.5em;
 }
 
 .footer-san-sol a:hover {
@@ -147,7 +144,6 @@ ul.no-markers {
 	text-decoration: underline;
 	border-radius: 3em;
 	border: thick white solid;
-	padding: 1.5em;
 }
 
 .footer-san-on {
