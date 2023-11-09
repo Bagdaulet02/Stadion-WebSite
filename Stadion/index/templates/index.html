@@ -53,20 +53,15 @@
 -->
 </header>
 <section>
-	<div class="fixed-container">
 	<div class="main-match-times">
-	<!-- <ul class="mathes-spicok"> -->
-		<a href="#" class="mathes-spicok">Birinwi oyin</a>
-		<a href="#" class="mathes-spicok">Ekinshi oyin</a>
-		<a href="#" class="mathes-spicok">Usinshi oyin</a>
-		<a href="#" class="mathes-spicok">Tortinshi oyin</a>
-		<a href="#" class="mathes-spicok">Besinshi oyin</a>
-	<!-- </ul> -->
+	<ul class="mathes-spicok">
+	{% for match in afisha %}
+		<li><a href="#">{{ match.title }}<br>{{ match.time }}</a></li>
+	{% endfor %}
+	</ul>
 	</div>
-</div>
 </section>
 <section>
-	<div class="fixed-container">
 	<div class="main-page">
 		<div class="main-text"> Стадион Басты Сайты</div>
 		<div class="center slider">
