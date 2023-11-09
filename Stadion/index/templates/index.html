@@ -55,11 +55,9 @@
 <section>
 	<div class="main-match-times"> 
 	<ul class="mathes-spicok"> 
-		<li><a href="#">Birinwi oyin</a></li> 
-		<li><a href="#">Ekinshi oyin</a></li>
-		<li><a href="#">Usinshi oyin</a></li>
-		<li><a href="#">Tortinshi oyin</a></li>
-		<li><a href="#">Besinshi oyin</a></li>
+	{% for match in afisha %}	
+		<li><a href="#">{{ match.title }}<br>{{ match.time }}</a></li>
+	{% endfor %}
 	</ul>
 	</div> 
 </section> 
