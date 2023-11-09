@@ -6,83 +6,80 @@ body {
 }
 
 header {
-	/* border: thick solid red; */
 	width: 100%;
 }
 
-header .navbar {
+.fixed-container {
+	width: 1000px;
+	margin: 0 auto;
+	padding: 20px 0px 0px;
+}
+
+.navbar {
 	width: 90%;
 	display: flex;
 	justify-content: end;
 }
 
-header .navbar .navbar-menu {
+.navbar-menu {
 	height: 10vh;
 	display: flex;
 	align-items:  center;
 }
 
-header .navbar .navbar-menu a {
-	font-size: 1.3em ;
+.navbar-menu a {
+		font-size: 1.3em ;
     padding:0 10px;
     text-decoration: none;
     color: white;
 }
 
-header .navbar .navbar-menu a:hover {
+.navbar-menu a:hover {
 	text-decoration: underline;
 	border-radius: 5px;
 	border: thick white solid;
 	color :  red;
 	padding: 10px;
-} 
+}
 
-section .main-match-times {
-	/* border: thick solid blue; */
+.main-match-times {
 	padding: 10px 0px;
 	height: 15vh;
 	margin: auto;
 	display: flex;
 	align-items: center;
 	width: 100%;
-	/*background-image:  linear-gradient(rgba(0, 0, 0, 0.8),rgba(0, 0, 0, 0.5) ) , url('../../../Html/img/stadion_sidenia_krasnyj_25765_1280x720.jpg');
-	*/background-repeat: no-repeat;
-	/*background-size: 100% auto;*/
+	background-repeat: no-repeat;
 	color: white;
 }
 
-section .main-match-times .mathes-spicok {
+.mathes-spicok {
 	width: 80%;
-}
-
-section .main-match-times .mathes-spicok li {
-	display: inline-block;
-	margin: 0 3%;
-	font-size: 1.5em;
-}
-
-section .main-match-times .mathes-spicok a {
+	font-size: 1.3em ;
+	padding:0 10px;
 	text-decoration: none;
 	color: white;
 }
 
-section .main-match-times .mathes-spicok a:hover {
+.mathes-spicok:hover {
+	text-decoration: underline;
+}
+
+.mathes-spicok a {
+	text-decoration: none;
+	color: white;
+}
+
+.mathes-spicok a:hover {
 	color: red;
 	text-decoration: underline;
 	border-radius: 5px;
-	border: thick white solid;
-	padding: 10px;
 }
 
 
-section .main-page {
-	/* border: thick orange solid; */
+.main-page {
 	height: 70%;
 	width: 100%;
-	/*background-repeat: no-repeat;
-	background-position: center;
-	/*background: linear-gradient(rgba(0, 0, 0, 0.8),rgba(0, 0, 0, 0.8) ) , url('../../../Html/img/stadion_sidenia_krasnyj_25765_1280x720.jpg');
-	*/
 }
 
 .main-text {
@@ -92,7 +89,7 @@ section .main-page {
 		 5px 5px white, 6px 6px white,
 		 7px 7px white, 8px 8px white;
 	justify-content: center;
-	font-size: 5em;
+	font-size: 4em;
 	text-align: center;
 	padding: 10px;
 	font-family: Franklin-Cothic;
@@ -103,62 +100,51 @@ section .main-page {
 	content: "";
 }
 
+#footer-main-gradien-bar {
+		height: 40vh;
+		background: linear-gradient(rgba(3, 25, 39, 1),rgba(3, 25, 39, 1) );
+}
 
 .footer-main {
-	/* border: thick black solid; */
 	width: 100%;
-	height: 40vh;
-	padding: 30px 0 50px;
 	display: flex;
-	background: linear-gradient(rgba(3, 25, 39, 1),rgba(3, 25, 39, 1) );
-	/*
-	background-repeat: no-repeat;
-	background-position: center; */
 	color: white;
 }
 
 .footer-san-sol {
-	column-count: 3;
 	width: 70%;
 	font-size: 1.2em;
 	color: white;
 	text-decoration: none;
-}
-
-.footer-san-sol li {
-	padding: 1.2em;
-}
-
-ul.no-markers {
-	list-style-type: none;
+	margin-top: 20px;
 }
 
 .footer-san-sol a {
 	text-decoration: none;
 	color: white;
-	padding: 1.5em;
+	margin: 50px 50px 50px 0px;
+	padding: 20px 10px 20px;
 }
 
 .footer-san-sol a:hover {
 	color: red;
 	text-decoration: underline;
-	border-radius: 3em;
-	border: thick white solid;
 }
 
 .footer-san-on {
-	width: 30%;	
+	width: 30%;
 	display: flex;
-	flex-direction: column;
 	color: white;
+	margin-top: 20px;
+	row-count: 3;
 }
 
 
 .footer-san-on a {
 	color: white;
 	text-decoration: none;
-	font-size: 1.8em;
-	padding: 1.2em;
+	font-size: 1.2em;
+	padding: 0em 1.2em 1.2em;
 	display: flex;
 	justify-content: center;
 }
@@ -166,7 +152,5 @@ ul.no-markers {
 .footer-san-on a:hover {
 	color: red;
 	text-decoration: underline;
-	border-radius: 4em;
-	border: thick white solid;
-	padding: 1.1em;
+
 }
