@@ -16,11 +16,12 @@ Including another URLconf
 """
 from django.contrib import admin
 from django.urls import path, include
+from django.views.generic import RedirectView as RV
 
 urlpatterns = [
     path('', include('index.urls')),
-    path('media/', include('media.urls')),
-#    path('matches/', include('matches.urls')),
-#    path('tickets/', include('tickets.urls')),
-    path('about/', include('about.urls')),
+    path('media', include('media.urls')),
+#    path('matches', include('matches.urls')),
+#    path('tickets', include('tickets.urls')),
+    path('about', include('about.urls')),
 ]

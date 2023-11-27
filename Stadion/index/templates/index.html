@@ -65,18 +65,11 @@
 	<div class="main-page">
 		<div class="main-text"> Стадион Басты Сайты</div>
 		<div class="center slider">
-				<div>
-					<img src="http://localhost:9090/Html/img/harkov_stadium_euro_2012_metalist_stadium_kharkiv_81195_1280x720.jpg" />
-				</div>
-				<div>
-					<img src="http://localhost:9090/Html/img/gv0obsxlrjy5jflao0zh.webp" />
-				</div>
-				<div>
-					<img src="http://localhost:9090/Html/img/1907cd03afba4bcbb5d11ae1cbfc78ae.jpeg" />
-				</div>
-				<div>
-					<img src="http://localhost:9090/Html/img/1907cd03afba4bcbb5d11ae1cbfc78ae.jpeg" />
-				</div>
+				{% for image in media %}
+					<div>
+						<img src="http://localhost:9090/{{image.1}}">{{image.0}}<img/>
+					</div>
+				{% endfor %}
 		</div>
 	</div>
 </div>
